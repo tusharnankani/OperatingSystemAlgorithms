@@ -10,9 +10,16 @@ class MemoryBlock {
     Scanner s = new Scanner(System.in);
     
     void processInput() {
+        System.out.println("Current Scenario of the Memory Allocation");
+        printTable(-1);
         System.out.print("Enter the size of the process that needs to be added (in KB): ");
         processSize = s.nextInt();
+        System.out.println("After First Fit \n");
         firstFit();
+        System.out.println("After Best Fit  \n");
+        bestFit();
+        System.out.println("After Worst Fit \n");
+        worstFit();
     }
 
     void firstFit() {
