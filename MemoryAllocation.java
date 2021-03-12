@@ -12,14 +12,42 @@ class MemoryBlock {
     void processInput() {
         System.out.println("\n\tCurrent Scenario of the Memory Allocation \n");
         printTable(-1);
-        System.out.print("Enter the size of the process that needs to be added (in KB): ");
+        System.out.print("\nEnter the size of the process that needs to be added (in KB): ");
         processSize = s.nextInt();
-        System.out.println("\n\t\tAfter First Fit \n");
-        firstFit();
-        System.out.println("\n\t\tAfter Best Fit  \n");
-        bestFit();
-        System.out.println("\n\t\tAfter Worst Fit \n");
-        worstFit();
+        choice();
+    }
+    
+    void choice() {
+        boolean running = true;
+        while(running) {
+            System.out.print("\nEnter the Algorithm for Memory Allocation: \n");
+            System.out.print("[1] First Fit\n");
+            System.out.print("[2] Best Fit\n");
+            System.out.print("[3] Worst Fit\n");
+            System.out.print("[4] Exit\n");
+            
+            System.out.print("Enter a number (1-4): ");
+            int fitType = s.nextInt();
+            switch(fitType) {
+                case 1:
+                    System.out.println("\n\t\tAfter First Fit \n");
+                    firstFit();
+                    break;
+                case 2:
+                    System.out.println("\n\t\tAfter Best Fit  \n");
+                    bestFit();
+                    break;
+                case 3:
+                    System.out.println("\n\t\tAfter Worst Fit \n");
+                    worstFit();
+                    break;
+                case 4: 
+                    running = false;
+                    break;
+                default:
+                    System.out.println("\nPlease enter a number between 1 and 4.\n");
+            }
+        }
     }
 
     void firstFit() {
