@@ -1,5 +1,49 @@
 # Memory Allocation Simulator
 
+![MemoryAllocationSimulator](https://socialify.git.ci/tusharnankani/MemoryAllocationSimulator/image?description=1&font=Raleway&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
+
+### Table of contents
+
+- [Introduction](#introduction)
+- [Demonstration](#demonstration)
+- [Algorithms](#algorithms)
+- [Local Setup](#local-setup)
+- [Author](#author)
+- [License](#license)
+
+## *Introduction*
+
+A simple Memory Allocation Simulatory built with JAVA, for a better understanding of how memory allocation works in an **Operating System**. It simulates common **memory allocation strategies**:
+
+- **First-Fit**
+- **Best-Fit**
+- **Worst-Fit**
+
+## Demonstration
+
+- After taking the input value of the Memory Divisions, their current status (Free/Not Free) and the process numbers, we print the current table of the Memory Allocation.
+- The values are currently hardcoded for understanding, debugging and saving time.
+
+![](image/README/1615565277496.png)
+
+- So now, we take the size of the input process, and a menu comes up.
+
+![](image/README/1615576690655.png)
+
+- Output for the First Fit
+
+![](image/README/1615576752475.png)
+
+- Output for the Best Fit
+
+![](image/README/1615576776052.png)
+
+- Output for the Worst Fit
+
+![](image/README/1615576798291.png)
+
+## Algorithms
+
 A simple Memory Allocation Simulatory built with JAVA, for a better understanding of how memory allocation works in an **Operating System**. It simulates common **memory allocation strategies**:
 
 - **First-Fit**
@@ -19,7 +63,7 @@ A simple Memory Allocation Simulatory built with JAVA, for a better understandin
 
 Before processing every simulation, the user has to input the **Current Memory Division/Allocation**, i.e. Memory Division, Status, Process Name.
 
-Currently, the memory allocation is hardcoded for saving time and easy debugging of this example.
+Currently, the memory allocation is **hardcoded** for saving time and easy debugging of this example.
 
 ### Current Memory Allocation
 
@@ -38,3 +82,21 @@ If input process is of size 200 KB, then:
 #### Memory Allocation - First Fit
 
 ![](image/README/1614854479103.png)
+
+## *Local Setup*
+
+* Download the latest version of Java - [Java SE - Downloads | Oracle](https://www.oracle.com/java/technologies/javase-downloads.html).
+* Clone the repository: `git clone https://github.com/tusharnankani/MemoryAllocationSimulator.git`
+* Open this directory in Command Promt or Shell.
+* Compile the file using the command: `javac MemoryAllocation.java`
+* Run the file using the command: `java MemoryAllocation`
+
+## Author
+
+Tushar Nankani
+
+[LinkedIn](https://www.linkedin.com/in/tusharnankani/) | [Twitter](https://twitter.com/tusharnankanii)
+
+## License 📜
+
+[GPU License](https://github.com/tusharnankani/MemoryAllocationSimulator/blob/master/LICENSE)
