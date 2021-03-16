@@ -4,17 +4,47 @@ import java.util.*;
 class MemoryBlock {
     int[] memory = new int[] { 100, 300, 40, 50, 150, 240, 200, 400};
     boolean[] free = new boolean[] { false, true, false, true, false, true, false, true };
-    int[] processNumber = new int[] { 1, 2, 3, 4 };
+    int processNumber = 4;
     int divs = memory.length;
     int processSize;
     Scanner s = new Scanner(System.in);
     
+    void welcomeMessage() {
+        System.out.println("\n\tWelcome to The Memory Allocation Simulator");
+
+        System.out.print("\nDo you want to input memory data? \nEnter [0] Yes or [1] No: ");
+        int inputData = s.nextInt();
+        if(inputData == 0)
+            memoryInput();
+        else    
+            processInput();
+    }
+
     void processInput() {
         System.out.println("\n\tCurrent Scenario of the Memory Allocation \n");
         printTable(-1);
         System.out.print("\nEnter the size of the process that needs to be added (in KB): ");
         processSize = s.nextInt();
         choice();
+    }
+    
+    void memoryInput() {
+        // re-initialising the data if user wants to enter the data;
+        memory = new int[100];
+        free = new boolean[100];
+        processNumber = 0;
+        System.out.print("\nEnter the number of Memory Blocks: ");
+        divs = s.nextInt();
+        for(int i = 0; i < divs; ++i) {
+            System.out.print("\nEnter the Memory Block on Position " + (i + 1) + ": ");
+            memory[i] = s.nextInt();
+            System.out.print("Not Free [0] / Free [1]: ");
+            free[i] = ((s.nextInt() == 1) ? true : false);
+            if(!free[i]) {
+                processNumber += 1;
+            }
+        }
+        processInput();
     }
     
     void choice() {
@@ -94,7 +124,7 @@ class MemoryBlock {
         int j = 1, ok = 0;
         for (int i = 0; i < divs; i++) {
             if(i == pos) {
-                System.out.print("|\t" + (i + 1) + " \t " +  processSize + "  \t\t " + " NF \t\t " + "Process " + (processNumber.length + 1) + " |");
+                System.out.print("|\t" + (i + 1) + " \t " +  processSize + "  \t\t " + " NF \t\t " + "Process " + (processNumber + 1) + " |");
                 if(memory[i] - processSize != 0) {
                     System.out.print("\n|\t" + (i + 2) + " \t " + (memory[i] - processSize) + "  \t\t " + " F \t\t\t   |");
                     ok = 1;
@@ -113,6 +143,6 @@ class MemoryAllocation {
     public static void main(String args[]) throws IOException
     {
         MemoryBlock m = new MemoryBlock();
-        m.processInput();
+        m.welcomeMessage();
     }
 }

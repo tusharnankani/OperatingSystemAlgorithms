@@ -9,7 +9,7 @@
 - [Algorithms](#algorithms)
 - [Local Setup](#local-setup)
 - [Author](#author)
-- [License](#license)
+- [License](#license-)
 
 ## *Introduction*
 
@@ -21,8 +21,13 @@ A simple Memory Allocation Simulatory built with JAVA, for a better understandin
 
 ## Demonstration
 
+- Welcome to the Memory Allocation Simulator.
+- First, we ask whether the user wants to enter a values or not, if not, then a few values are already hardcoded.
+- The hardcoded values are important for understanding, debugging and saving time.
+
+![](image/README/1615909517978.png)
+
 - After taking the input value of the Memory Divisions, their current status (Free/Not Free) and the process numbers, we print the current table of the Memory Allocation.
-- The values are currently hardcoded for understanding, debugging and saving time.
 
 ![](image/README/1615565277496.png)
 
