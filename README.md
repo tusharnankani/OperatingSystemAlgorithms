@@ -84,7 +84,7 @@ If input process is of size 200 KB, then:
 
 ![](image/README/1614854456549.png)
 
-#### Memory Allocation - First Fit
+#### Memory Allocation - Worst Fit
 
 ![](image/README/1614854479103.png)
 
