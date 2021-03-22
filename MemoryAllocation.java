@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 class MemoryBlock {
+    // hardcoded values if the user does not want to enter the values;
     int[] memory = new int[] { 100, 300, 40, 50, 150, 240, 200, 400};
     boolean[] free = new boolean[] { false, true, false, true, false, true, false, true };
     int processNumber = 4;
