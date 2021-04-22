@@ -1,6 +1,6 @@
-# Memory Allocation Simulator
+# OperatingSystemAlgorithms
 
-![MemoryAllocationSimulator](https://socialify.git.ci/tusharnankani/MemoryAllocationSimulator/image?description=1&font=Raleway&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
+![OperatingSystemAlgorithms](https://socialify.git.ci/tusharnankani/OperatingSystemAlgorithms/image?description=1&font=Raleway&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
 
 ### Table of contents
 
@@ -13,11 +13,10 @@
 
 ## _Introduction_
 
-A simple Memory Allocation Simulatory built with JAVA, for a better understanding of how memory allocation works in an **Operating System**. It simulates common **memory allocation strategies**:
-
--   **First-Fit**
--   **Best-Fit**
--   **Worst-Fit**
+- Memory Allocation Simulator built with JAVA, for a better understanding of how memory allocation works in an **Operating System**. It simulates common **memory allocation strategies**:
+    -   First-Fit
+    -   Best-Fit
+    -   Worst-Fit
 
 This repository also contains the code for
 
