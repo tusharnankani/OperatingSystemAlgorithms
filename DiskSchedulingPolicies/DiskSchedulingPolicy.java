@@ -3,8 +3,8 @@ import java.util.*;
 
 class DSP_Algorithms {
     // hardcoded values if the user does not want to enter the values;
-    int[] requestQueue = new int[] { 98, 183, 37, 122, 14, 124, 65, 67 };
-    int globalCurrentHead = 53;
+    int[] requestQueue = new int[] { 90, 120, 30, 40, 115, 130, 110, 80, 190, 25 };
+    int globalCurrentHead = 86;
     int queueLength = requestQueue.length;
     int[] orderOfProcessing = new int[queueLength];
     int totalHeadMovement = 0;
